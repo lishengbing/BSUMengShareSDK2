@@ -9,6 +9,14 @@
 #import "YLShareContentSourceView.h"
 
 
+// 获取屏幕宽度、高度
+#define YLScreenW [UIScreen mainScreen].bounds.size.width
+#define YLScreenH [UIScreen mainScreen].bounds.size.height
+
+
+
+
+
 @interface YLShareView : UIView
 @property (strong, nonatomic)YLShareContentSourceView *bottomView;
 

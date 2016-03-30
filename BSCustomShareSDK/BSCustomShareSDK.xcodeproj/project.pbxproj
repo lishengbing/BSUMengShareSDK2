@@ -67,7 +67,6 @@
 		A33276F91CAB7D1A009DFFBD /* libYixinSDK_V2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33276DC1CAB7D1A009DFFBD /* libYixinSDK_V2.2.a */; };
 		A332770A1CAB812A009DFFBD /* libSocialSinaSSO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33276FC1CAB812A009DFFBD /* libSocialSinaSSO.a */; };
 		A332770B1CAB812A009DFFBD /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33276FD1CAB812A009DFFBD /* libWeiboSDK.a */; };
-		A332770C1CAB812A009DFFBD /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A33277071CAB812A009DFFBD /* WeiboSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,7 +87,6 @@
 		A332763A1CAB6A3D009DFFBD /* UIView+YL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YL.m"; sourceTree = "<group>"; };
 		A332763D1CAB6BBE009DFFBD /* YLAnimaitonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAnimaitonTool.h; sourceTree = "<group>"; };
 		A332763E1CAB6BBE009DFFBD /* YLAnimaitonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAnimaitonTool.m; sourceTree = "<group>"; };
-		A33276411CAB70A9009DFFBD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A33276441CAB754C009DFFBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		A33276461CAB754C009DFFBD /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
 		A33276471CAB754C009DFFBD /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
@@ -199,7 +197,6 @@
 		A33277041CAB812A009DFFBD /* WBSDKBasicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKBasicButton.h; sourceTree = "<group>"; };
 		A33277051CAB812A009DFFBD /* WBSDKCommentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKCommentButton.h; sourceTree = "<group>"; };
 		A33277061CAB812A009DFFBD /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKRelationshipButton.h; sourceTree = "<group>"; };
-		A33277071CAB812A009DFFBD /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
 		A33277081CAB812A009DFFBD /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
 		A33277091CAB812A009DFFBD /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -281,7 +278,6 @@
 				A33276181CAB6951009DFFBD /* AppDelegate.m */,
 				A332762B1CAB6978009DFFBD /* BSBaseViewController.h */,
 				A332762C1CAB6978009DFFBD /* BSBaseViewController.m */,
-				A33276411CAB70A9009DFFBD /* PrefixHeader.pch */,
 				A33276201CAB6951009DFFBD /* Assets.xcassets */,
 				A33276221CAB6951009DFFBD /* LaunchScreen.storyboard */,
 				A33276251CAB6951009DFFBD /* Info.plist */,
@@ -579,7 +575,6 @@
 				A33277041CAB812A009DFFBD /* WBSDKBasicButton.h */,
 				A33277051CAB812A009DFFBD /* WBSDKCommentButton.h */,
 				A33277061CAB812A009DFFBD /* WBSDKRelationshipButton.h */,
-				A33277071CAB812A009DFFBD /* WeiboSDK.bundle */,
 				A33277081CAB812A009DFFBD /* WeiboSDK.h */,
 				A33277091CAB812A009DFFBD /* WeiboUser.h */,
 			);
@@ -650,7 +645,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A33276621CAB754D009DFFBD /* UMShareEditViewController.xib in Resources */,
-				A332770C1CAB812A009DFFBD /* WeiboSDK.bundle in Resources */,
 				A33276601CAB754D009DFFBD /* UMSCommentInputController.xib in Resources */,
 				A33276241CAB6951009DFFBD /* LaunchScreen.storyboard in Resources */,
 				A332765F1CAB754D009DFFBD /* UMSCommentDetailController.xib in Resources */,
@@ -804,7 +798,7 @@
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/lishengbing/Desktop/BSCustomShareSDK/BSCustomShareSDK/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = BSCustomShareSDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -845,7 +839,7 @@
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/lishengbing/Desktop/BSCustomShareSDK/BSCustomShareSDK/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = BSCustomShareSDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

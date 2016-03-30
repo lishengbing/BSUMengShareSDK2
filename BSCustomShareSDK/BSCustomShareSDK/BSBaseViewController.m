@@ -37,7 +37,6 @@
 
 
 - (void)click:(UIButton *)sender {
-    YLLog(@"点击开始");
     // 显示
     [self.shareView show];
 }
@@ -58,7 +57,7 @@
     
     [self shareWithPostSNSWithTypes:type content:@"分享内容" image:nil location:nil urlResource:urlResource presentedController:self completion:^(UMSocialResponseEntity *response) {
         if (response.responseCode == UMSResponseCodeSuccess) {
-            YLLog(@"分享成功");
+
         }
     }];
 }

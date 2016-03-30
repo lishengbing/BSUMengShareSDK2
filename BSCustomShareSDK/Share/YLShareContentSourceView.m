@@ -9,6 +9,10 @@
 #import "YLShareContentSourceView.h"
 #import "UMSocialSnsPlatformManager.h"
 
+// 获取屏幕宽度、高度
+#define YLScreenW [UIScreen mainScreen].bounds.size.width
+#define YLScreenH [UIScreen mainScreen].bounds.size.height
+
 
 
 static CGFloat normalHeight = 50;          //  默认上下高度
@@ -119,19 +123,15 @@ static NSInteger showCount = 4;         //  一行显示分享来源个数
 - (void)tap:(UIGestureRecognizer *)ges {
     switch (ges.view.tag-100) {
         case 0:
-            YLLog(@"微博");
             [self.delegate shareWithSNSType:UMShareToSina];
             break;
         case 1:
-            YLLog(@"微信");
              [self.delegate shareWithSNSType:UMShareToWechatSession];
             break;
         case 2:
-            YLLog(@"朋友圈");
              [self.delegate shareWithSNSType:UMShareToWechatTimeline];
             break;
         case 3:
-            YLLog(@"QQ");
              [self.delegate shareWithSNSType:UMShareToQQ];
             break;
             
